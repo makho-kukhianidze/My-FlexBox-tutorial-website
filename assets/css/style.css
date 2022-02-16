@@ -212,6 +212,7 @@ footer{
   }
   .box{
     width: 80px;
+    font-size: 20px;
   }
   pre{font-size: 14px;
     word-break: break-all;
@@ -225,6 +226,7 @@ footer{
   }
   .box{
     width: 70px;
+    font-size: 20px;
   }
   pre{font-size: 14px;
     word-break: break-all;
