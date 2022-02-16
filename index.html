@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my project">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+    <meta name="author" content="Makho kukhianidze">
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="My project" />
+    <meta property="og:title" content="My Practice work" />
+    <meta property="og:description" content="Flexbox - Html,Css,JavaScript" />
+    <meta property="og:image" content="assets/icons/m.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Flexbox tutorial - website</title>
+    <link rel="icon" href="assets/icons/m.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="assets/jQuery/jQuery.js"></script>
+</head>
+
+<body>
+    <div class="tabMenu">
+         <a class="menuBtn" href="https://makho-kukhianidze.github.io/My-jQuery-tutorial-website/">jQuery</a>
+        <button class="menuBtn" id="active">Learn Flexbox</button>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to Up">Up</button>
+    <div class="centerButton">
+        <h1>Learn Flexbox</h1>
+        <p id="infoJquery">Flexbox Tutorial for Beginners</p>
+        <div class="tabMenu">
+            <button id="StartJqueryTutotrial" class="menuBtn" onclick="tabMenuBtn(event, 'LevelOne')">Start </button>
+        </div>
+    </div>
+    <div id="LevelOne" class="tabcontent">
+        <div id="jusCont" class="parentDiv">
+            <div class="box">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+        </div>
+        <div class="main-box">
+            <pre>
+            <p id="flexParaInfo"></p>
+            #parentDiv {
+            display: flex;
+            <span id="flexPara">-----------------------</span>
+            <span id="flexParaTwo"></span>
+            }
+            </pre>
+        </div>
+        <div class="main-box">
+            <button onclick="jtflexStart()" class="btnEight">justify-content: flex-start</button>
+            <button onclick="jtflexEnd()" class="btnEight">justify-content: flex-end</button>
+            <button onclick="jtflexCenter()" class="btnEight">justify-content: center</button>
+            <button onclick="jtflexBetween()" class="btnEight">justify-content: space-between</button>
+            <button onclick="jtfleAaround()" class="btnEight">justify-content: space-around</button>
+        </div>
+        <div class="main-box">
+            <button onclick="jtfleStart()" class="btnEight">align-items: flex-start</button>
+            <button onclick="jtfleEnd()" class="btnEight">align-items: flex-end</button>
+            <button onclick="jtfleCenter()" class="btnEight">align-items: center</button>
+            <button onclick="jtfleBaseline()" class="btnEight">align-items: baseline</button>
+            <button onclick="jtfleStretche()" class="btnEight">align-items: stretch</button>
+        </div>
+        <div class="main-box">
+            <button onclick="jtfleCenter()" class="btnEight">Horizontal & Vertical-center</button>
+            <button onclick="jtfleDirection()" class="btnEight">flex-direction: row-reverse</button>
+            <button onclick="jtfleColumn()" class="btnEight">flex-direction: column</button>
+            <button onclick="jtfleColumnReve()" class="btnEight">flex-direction: column-reverse</button>
+        </div>
+    </div>
+    <footer id="footerAbsolute">Author: makho kukhianidze</footer>
+    <script src="assets/javascript/FlexboxTutorial.js"></script>
+</body>
+
+</html>
